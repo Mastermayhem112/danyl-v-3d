@@ -1,0 +1,112 @@
+[gd_scene format=3 uid="uid://175shl1hxblu"]
+
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://Addons/proto_controller/proto_controller.tscn" id="1_l0dwn"]
+
+[node name="Level 01" type="Node3D" unique_id=2049576105]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=833062789]
+transform = Transform3D(0.9085082, 0.33503562, -0.24972786, 0, 0.59762514, 0.80177563, 0.41786706, -0.7284197, 0.54294735, 0, 0, 0)
+light_color = Color(0.71067923, 0.6362772, 0.52738315, 1)
+light_bake_mode = 1
+shadow_enabled = true
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=1733348218]
+use_collision = true
+
+[node name="First Floor" type="Node" parent="CSGCombiner3D" unique_id=1526073292]
+
+[node name="Floor" type="CSGBox3D" parent="CSGCombiner3D/First Floor" unique_id=410360258]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.003, 0.05, 0.014)
+use_collision = true
+size = Vector3(50, 0.1, 50)
+
+[node name="Wall" type="CSGBox3D" parent="CSGCombiner3D/First Floor" unique_id=1969772814]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, -24.25)
+use_collision = true
+size = Vector3(50, 3, 1.5)
+
+[node name="Wall2" type="CSGBox3D" parent="CSGCombiner3D/First Floor" unique_id=1471044409]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 24.25)
+use_collision = true
+size = Vector3(50, 3, 1.5)
+
+[node name="Wall3" type="CSGBox3D" parent="CSGCombiner3D/First Floor" unique_id=814922965]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.25, 1.5, 0)
+use_collision = true
+size = Vector3(1.5, 3, 50)
+
+[node name="Wall4" type="CSGBox3D" parent="CSGCombiner3D/First Floor" unique_id=864793729]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.25, 1.5, 0)
+use_collision = true
+size = Vector3(1.5, 3, 50)
+
+[node name="Wall5" type="CSGBox3D" parent="CSGCombiner3D/First Floor" unique_id=895006139]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, -10.25)
+use_collision = true
+size = Vector3(50, 3, 1.5)
+
+[node name="Door" type="CSGBox3D" parent="CSGCombiner3D/First Floor/Wall5" unique_id=1934206644]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+operation = 2
+size = Vector3(2.5, 2.5, 2)
+
+[node name="Wall6" type="CSGBox3D" parent="CSGCombiner3D/First Floor" unique_id=1012619407]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.25, 1.5, -17.25)
+use_collision = true
+size = Vector3(1.5, 3, 15.5)
+
+[node name="Door2" type="CSGBox3D" parent="CSGCombiner3D/First Floor/Wall6" unique_id=336335625]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+operation = 2
+size = Vector3(2, 2.5, 2.5)
+
+[node name="Stairs" type="CSGPolygon3D" parent="CSGCombiner3D/First Floor" unique_id=1218128530]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 13.5, 0, -7)
+use_collision = true
+polygon = PackedVector2Array(-1.6, 0, 1, 1.2, 1, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="CSGCombiner3D/First Floor" unique_id=553513299]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.432796, 1.2036812, -13.970327)
+omni_range = 12.599
+
+[node name="Second Floor" type="Node" parent="CSGCombiner3D" unique_id=831289428]
+
+[node name="Floor" type="CSGBox3D" parent="CSGCombiner3D/Second Floor" unique_id=1202391956]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.25, 3, -17.25)
+use_collision = true
+size = Vector3(15.5, 0, 15.5)
+
+[node name="Wall" type="CSGBox3D" parent="CSGCombiner3D/Second Floor" unique_id=1402788427]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.25, 4.5, -24.25)
+use_collision = true
+size = Vector3(15.5, 3, 1.5)
+
+[node name="Wall2" type="CSGBox3D" parent="CSGCombiner3D/Second Floor" unique_id=1038139989]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.25, 4.5, -10.25)
+use_collision = true
+size = Vector3(15.5, 3, 1.5)
+
+[node name="Door" type="CSGBox3D" parent="CSGCombiner3D/Second Floor/Wall2" unique_id=361214791]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+operation = 2
+size = Vector3(2.5, 2.5, 2)
+
+[node name="Wall3" type="CSGBox3D" parent="CSGCombiner3D/Second Floor" unique_id=232458456]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.25, 4.5, -17.25)
+use_collision = true
+size = Vector3(1.5, 3, 15.5)
+
+[node name="Wall4" type="CSGBox3D" parent="CSGCombiner3D/Second Floor" unique_id=2017082608]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.25, 4.5, -17.25)
+use_collision = true
+size = Vector3(1.5, 3, 15.5)
+
+[node name="Porch" type="CSGBox3D" parent="CSGCombiner3D/Second Floor" unique_id=1513641021]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.25, 1.5, -8.25)
+use_collision = true
+size = Vector3(2.5, 3, 2.5)
+
+[node name="Player" parent="." unique_id=111641022 instance=ExtResource("1_l0dwn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.81132984, 0)
+can_sprint = true
+can_freefly = true
