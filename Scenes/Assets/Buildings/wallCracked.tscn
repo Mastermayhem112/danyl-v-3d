@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dlcb0db4at0nn"]
+
+[ext_resource type="PackedScene" uid="uid://cnwl4bwf74070" path="res://Assets/brackeys_3d_game_assets/dungeon_assets/building/wall_cracked.glb" id="1_lxokn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dt7av"]
+size = Vector3(4, 4, 1)
+
+[node name="wallCracked" type="StaticBody3D" unique_id=1206962196]
+
+[node name="wall_cracked2" parent="." unique_id=311830141 instance=ExtResource("1_lxokn")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1805184784]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_dt7av")

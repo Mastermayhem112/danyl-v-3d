@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://hcflmktx7uuk"]
+
+[ext_resource type="PackedScene" uid="uid://ie3jvjlku6es" path="res://Assets/brackeys_3d_game_assets/dungeon_assets/building/floor_wood.glb" id="1_atcta"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rx55x"]
+size = Vector3(4, 0.2, 4)
+
+[node name="woodFloor" type="StaticBody3D" unique_id=1884757156]
+
+[node name="floor_wood" parent="." unique_id=1283314044 instance=ExtResource("1_atcta")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=320122921]
+shape = SubResource("BoxShape3D_rx55x")

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dok6mvenc4qio"]
+
+[ext_resource type="PackedScene" uid="uid://c430x66lejavj" path="res://Assets/brackeys_3d_game_assets/dungeon_assets/building/wall_archedwindow_gated.glb" id="1_xwtvh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1pghu"]
+size = Vector3(4, 4, 1)
+
+[node name="wallArchedWindow" type="StaticBody3D" unique_id=558593805]
+
+[node name="wall_archedwindow_gated2" parent="." unique_id=1131879698 instance=ExtResource("1_xwtvh")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2015600972]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_1pghu")

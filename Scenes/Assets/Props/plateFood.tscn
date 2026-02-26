@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://uxqas1oq8lgi"]
+
+[ext_resource type="PackedScene" uid="uid://dtq40xdgycrya" path="res://Assets/brackeys_3d_game_assets/dungeon_assets/props/plate_food.glb" id="1_f6kyy"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_edn2s"]
+height = 0.5792114
+radius = 0.3227539
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_f6kyy"]
+radius = 0.4906006
+height = 0.9812012
+
+[node name="plateFood" type="StaticBody3D" unique_id=61724483]
+
+[node name="plate_food" parent="." unique_id=1125829151 instance=ExtResource("1_f6kyy")]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1833035785]
+transform = Transform3D(0.2849496, -0.92136997, 0.26435077, 0.9579981, 0.28303772, -0.046146106, -0.032303594, 0.2663967, 0.96332186, -0.15373786, 0.42655644, -0.16805796)
+shape = SubResource("CylinderShape3D_edn2s")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=2062666969]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.070907444, 0)
+shape = SubResource("CapsuleShape3D_f6kyy")

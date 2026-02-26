@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://1er2sp46quj2"]
+
+[ext_resource type="PackedScene" uid="uid://cfdgda1t40fjq" path="res://Assets/brackeys_3d_game_assets/dungeon_assets/props/keyring.glb" id="1_q1mtl"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_q1mtl"]
+radius = 0.7392578
+height = 1.4966187
+
+[node name="keyring" type="StaticBody3D" unique_id=1672585271]
+
+[node name="keyring2" parent="." unique_id=159569690 instance=ExtResource("1_q1mtl")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1360753058]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0033558607, -0.3687636, -0.0114970505)
+shape = SubResource("CapsuleShape3D_q1mtl")

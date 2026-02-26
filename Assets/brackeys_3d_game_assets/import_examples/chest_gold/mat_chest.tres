@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bvu3j1qxijqxt"]
+
+[ext_resource type="Texture2D" uid="uid://cmcpqf431jcgs" path="res://Assets/brackeys_3d_game_assets/import_examples/chest_gold/chest_texture.png" id="1_bc150"]
+
+[resource]
+albedo_texture = ExtResource("1_bc150")
