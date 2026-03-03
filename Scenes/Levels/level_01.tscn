@@ -598,6 +598,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.000002, 3.6000001, -10)
 [node name="ceiling9" parent="." unique_id=1613492640 instance=ExtResource("16_clbrb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.000002, 3.6000001, -22)
 
+[node name="ceiling105" parent="." unique_id=1467138696 instance=ExtResource("16_clbrb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.200003, 3.6000001, -22)
+
 [node name="ceiling10" parent="." unique_id=951449897 instance=ExtResource("16_clbrb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.000002, 3.6000001, -18)
 
@@ -883,7 +886,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.166931, 0.100000374, -14.
 [node name="woodFloor64" parent="." unique_id=763506271 instance=ExtResource("17_6kgcr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.166931, 0.100000374, -10.00527)
 
-[node name="ceiling53" parent="." unique_id=1467138696 instance=ExtResource("16_clbrb")]
+[node name="ceiling53" parent="." unique_id=1890880234 instance=ExtResource("16_clbrb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.000002, 7.6000004, -22)
 
 [node name="ceiling54" parent="." unique_id=658299257 instance=ExtResource("16_clbrb")]
