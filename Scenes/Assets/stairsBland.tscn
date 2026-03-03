@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://hfuijicvk3t0"]
+
+[ext_resource type="PackedScene" uid="uid://c5pm3hsbxpywu" path="res://Scenes/Assets/Bland_Stairs.blend" id="1_kfbbb"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_vrn8y"]
+points = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a5kvi"]
+size = Vector3(0.12683105, 1, 1)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=1899961569]
+
+[node name="Bland_Stairs" parent="." unique_id=1333895665 instance=ExtResource("1_kfbbb")]
+
+[node name="Light" parent="Bland_Stairs" index="1" unique_id=310926846]
+light_color = Color(0.012617188, 0.012617188, 0.012617188, 1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2134585636]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.25, -5.9604645e-08, 0)
+shape = SubResource("ConvexPolygonShape3D_vrn8y")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=104171531]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.8776377, -5.9604645e-08, 0)
+shape = SubResource("BoxShape3D_a5kvi")
+
+[editable path="Bland_Stairs"]
