@@ -48,6 +48,7 @@ var mouse_captured : bool = false
 var look_rotation : Vector2
 var move_speed : float = 0.0
 var freeflying : bool = false
+var was_on_floor : bool = false
 
 ## IMPORTANT REFERENCES
 @onready var head: Node3D = $Head
@@ -85,6 +86,10 @@ func _physics_process(delta: float) -> void:
 		move_and_collide(motion)
 		return
 	
+	if !was_on_floor and is_on_floor():
+		$FallParticle.emitting = true
+		$FallParticle.restart()
+	was_on_floor = is_on_floor()
 	# Apply gravity to velocity
 	if has_gravity:
 		if not is_on_floor():
